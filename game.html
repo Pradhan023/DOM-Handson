@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <script src="https://kit.fontawesome.com/b4b774f823.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+    <section>
+    <button onclick="location.reload(true)">Play Again</button>
+    <span>(Between 1 and 100)</span>
+    </section>
+    <h1 class="txt">Guess My Number!</h1>
+    <div class="display">
+        <h1></h1>
+        <div id="rightnumber">?</div>
+    </div>
+    <div class="check-container">
+    <input type="number" class="inp1" >
+    <button class="btn">Check!</button>
+    </div>
+
+    <div class="guess-parent">
+    <h1 class="guess" id="guess">Start guessing...</h1>
+    <div class="values">
+        <div><label ><span>💯</span>Chances:</label>
+        <span class="val" id="val1">100</span>
+        <div><label ><span>🥇</span>Highscore:</label>
+        <span class="val" id="nval">0</span>
+    </div>
+
+    </div>
+    <script src="./game.js"></script>
+</body>
+</html>

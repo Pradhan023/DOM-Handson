@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Handson</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <pre >
+        <center><h1 id="head">Dom</h1></center>
+        <h1 id="text">Q1. Write the code to access element which is having id as "text"</h1>
+        <p>Ans. let txt = document.getElementById('text');</p>
+
+        <h1>Q2. Write the code to access element which is having tag as "h1"</h1>
+        <p>Ans.  let h1 = document.getElementsByTagName("h1")</p>
+
+        <h1 class="box">Q3. Write the code to access element which is having class as "box"</h1>
+        <p>Ans. let box = document.getElementsByClassName("box")
+        box[0].innerHtml;</p>
+
+        <h1>Q4. &lth1&gt Hello &lt/h1&gt
+    Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</h1>
+        <p>Ans. <h1 id="hello">        Hello   <mark style="background-color: rgb(247, 230, 139);">(touch me)</mark></h1></p>
+        
+        <h1>Q5. Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</h1>
+        <p>Ans. <div class="parnet">
+            <h1 id="hw">Hello World</h1>
+            <button  onclick="bn()">Click Me</button>
+            </div></p>
+        
+        <h1>Q6. "&lth1&gt Hello &lt/h1&gt
+    Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</h1>
+            <p>Ans. <h1 id="color">Hello</h1></p>
+            <big>let color = document.getElementById('color')
+          color.style.color = "red"</big>
+        
+            <h1>Q7. Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". 
+        When user clicks on this button, the cards arrangement should be changed to vertical direction.</h1>
+        <p>Ans. <div class="container" id="cn">
+            <div class="c1"></div>
+            <div class="c1"></div>
+            <div class="c1"></div>
+        </div>
+        <button onclick="flex1()" id="btn">Click Me</button></p>
+        
+        <h1>Q8. What’s the difference between window vs document?</h1>
+        <p>Ans. <table id="table" border="1px solid">
+            <thead>
+                <tr style="font-size: larger;">
+                    <th>Document</th>
+                    <th>Window</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>It represents the document loaded inside the window or browser.</td>
+                    <td>It represents the browser window in which you are seeing the content.</td>
+                </tr>
+                <tr>
+                    <td>The properties related to it are stored in the document object.</td>
+                    <td>The properties related to it are stored in the window object.</td>
+                </tr>
+                <tr>
+                    <td>It is the root element of the document object model.</td>
+                    <td>The window is the global element for all objects, functions, etc.</td>
+                </tr>
+                <tr>
+                    <td>It is an object of the window.	</td>
+                    <td>It is an object of the browser.</td>
+                </tr>
+                <tr>
+                    <td>We can not access windows objects properties inside the document.</td>
+                    <td>We can access document object properties inside the window.</td>
+                </tr>
+                <tr>
+                    <td>Example: document.title will return the title of the document</td>
+                    <td>Example: window.document.title will return the title of the document.</td>
+                </tr>
+            </tbody>
+        </table></p>
+        
+        <h1> Q9. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</h1>
+        <p>Ans. <div class="clock_container">
+            <h1 id="clk-display"></h1>
+        </div></p>
+
+        <a href="../game/index.html" style="text-decoration: none;"><h1>---------Guess Game..</h1></a>
+
+        
+        </pre>
+    
+<script src="./nn.js"></script>
+</body>
+</html>
